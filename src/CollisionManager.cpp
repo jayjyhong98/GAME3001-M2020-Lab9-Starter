@@ -188,9 +188,15 @@ bool CollisionManager::lineAABBCheck(Ship* object1, GameObject* object2)
 	if (lineRectCheck(lineStart, lineEnd, boxStart, boxWidth, boxHeight))
 	{
 		switch (object2->getType()) {
-		case TARGET:
+		case OBSTACLE:
 			std::cout << "Collision with Obstacle!" << std::endl;
-			SoundManager::Instance().playSound("yay", 0);
+			//SoundManager::Instance().playSound("yay", 0);
+
+			break;
+
+		case PLANE:
+			std::cout << "Collision with Plane!" << std::endl;
+			//SoundManager::Instance().playSound("yay", 0);
 
 			break;
 		default:
