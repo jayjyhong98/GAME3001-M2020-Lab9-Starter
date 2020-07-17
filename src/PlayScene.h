@@ -26,6 +26,8 @@ private:
 	Plane* m_pPlaneSprite;
 	Player* m_pPlayer;
 	bool m_playerFacingRight;
+	bool m_bDebugmode;
+	bool m_bHpressed;
 
 	Obstacle* m_pObstacle;
 	

@@ -105,6 +105,8 @@ bool EventManager::isKeyUp(const SDL_Scancode key) const
 {
     if (m_keyStates != nullptr)
     {
+        //return (m_keyStates[key] == 0) > true : false;
+        
         if (m_keyStates[key] == 0)
         {
             return true;
